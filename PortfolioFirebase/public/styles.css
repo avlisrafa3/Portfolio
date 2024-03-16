@@ -1,0 +1,58 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to bottom right, 
+        rgba(125, 186, 0, 0.65) 0%, 
+        rgba(165, 172, 175, 0) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #000; /* Change this to your desired background color */
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 15%; /* Adjust the width to control the size of the white bars */
+    height: 100%;
+    background-color: #ffffff; /* Color of the white bars */
+}
+
+body::before {
+    left: 0;
+    top: 0;
+}
+
+body::after {
+    right: 0;
+    top: 0;
+}
+/*Navigation Bar Styling*/
+#myNavbar {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #a5acaf;
+    font-weight: bolder;
+    background-color: #002244;
+}
+/* Add your CSS code here */
+#myNavbar:hover {
+    color: #a5acaf;
+}
+#navDemo {
+    font-family: "Lato", sans-serif;
+    color: #a5acaf;
+    font-weight: bolder;
+    background-color: #002244;
+}
+#navDemo:hover {
+color: #a5acaf;
+}
