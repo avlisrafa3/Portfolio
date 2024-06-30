@@ -23,7 +23,9 @@
       font-size: 38px;
       text-align: center;
     }
-
+    .contact-info {
+      text-align: center;
+    }
     .location {
       text-align: center;
     }
@@ -66,10 +68,14 @@
       list-style-type: none;
       padding: 0;
     }
+    .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -81,6 +87,9 @@
     <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RESUME</a>
     <a href="Resume.pdf" class="w3-bar-item w3-button w3-hide-small" onclick="downloadResume()">DOWNLOAD RESUME</a>
+    <a href="https://github.com/avlisrafa3" target="_blank" class="w3-bar-item w3-button w3-hide-medium"><i class="fa fa-github" style="font-size:29px"></i></a>
+    <a href="https://www.linkedin.com/in/rafael-silva-091757274/" target="_blank" class="w3-bar-item w3-button w3-hide-medium"><i class="fa fa-linkedin" style="font-size:29px"></i></a>
+  </div>
   </div>
 
   <!-- Navbar on small screens -->
@@ -95,52 +104,98 @@
 
 <div class="w3-content container">
   <h1>Rafael Silva</h1>
-  <p class="location"><a href="tel:774-294-2006">(774)-294-2006</a> | <a href="mailto: rafasilva.rs881@gmail.com">rafasilva.rs881@gmail.com</a> | <a href="https://www.google.com/maps/place/Pawtucket,+RI" target="_blank">Pawtucket, RI</a>
-  </p>
+  <div class="contact-info">
+    <p>
+      <a href="tel:774-294-2006">774-294-2006</a> |
+      <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a> |
+      <a href="https://rsilva.dev" target="_blank">Portfolio</a>
+    </p>
+  </div>
 
-  <h2>Education</h2>
-  <div class="education">
-    <p>Western Governors University (WGU)</p>
-    <p>Bachelor of Science (B.S.) - Software Engineering &nbsp; (Expected September 2024)</p>
-    <p>RELEVANT COURSEWORK:</p>
+  <div class="section">
+    <h2>Education</h2>
+    <p>Western Governors University, Salt Lake City, Utah</p>
+    <p>Bachelor of Science in Software Engineering - June 2024</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
     <ul>
-      <li>JavaScript Programming, Java, Back-End Programming with Spring Boot and Data Management with SQL and PostgreSQL</li>
-      <li>Front-End Development, User Interface Design (UI), and User Experience (UX) and Python Programming</li>
-      <li>Interactive World Map using Angular: <a href="https://angularworldmap.web.app/" target="_blank">https://angularworldmap.web.app/</a></li>
+      <li>JavaScript, Java, Python, SpringBoot, User Interface Design (UI), User Experience (UX), MySQL</li>
+      <li>Android Development, Active Directory, AWS Cloud Services, Docker, GitLab, PostgreSQL</li>
+      <li>AWS - Certified Cloud Practitioner | ITIL4 Foundations | Portuguese (Fluent/Bilingual)</li>
     </ul>
   </div>
 
-  <hr>
+  <div class="section">
+    <h2>Experience</h2>
+    <div class="experience">
+      <p class="job-title">Desktop Technician, Geek Elements, Pawtucket, RI (July 2023 - Present)</p>
+      <ul>
+        <li>Troubleshoot hardware, software, and network issues, including Active Directory and O365 administration.</li>
+        <li>Offer hands-on assistance and phone support to users and staff.</li>
+        <li>Developed a Python script that reduced duplicate computer serial number identification time by 20%.</li>
+        <li>Assisted in preparing manuals, training materials, and training users in system usage and modifications.</li>
+        <li>Performed hardware upgrades and equipment installations.</li>
+        <li>Conducted system maintenance and ensured data security protocols were followed.</li>
+      </ul>
+    </div>
 
-  <h2>Experience</h2>
-  <div class="experience">
-     <p class="job-title">Desktop Technician, Geek Elements, Pawtucket RI (July 2023 - Present)</p>
-    <ul>
-      <li>Provide technical support and setup devices and services</li>
-      <li>Troubleshoot hardware, software, and network issues</li>
-      <li>Offer hands-on assistance and phone support to users and staff</li>
-      <li>Developed a Python script to identify duplicate computer serial numbers from a CSV file</li>
-    </ul>
+    <div class="experience">
+      <p class="job-title">Stone Mason, C & O Concrete and Masonry, LLC, Pawtucket, RI (May 2020 - June 2023)</p>
+      <ul>
+        <li>Collaborated with customers and vendors to procure materials and products.</li>
+        <li>Employed strong communication skills, attention to detail, and problem-solving abilities to ensure high-quality work and customer satisfaction.</li>
+        <li>Experienced in using tools and machinery.</li>
+      </ul>
+    </div>
+  </div>
 
-    <p class="job-title">Mason, C & O Concrete and Masonry, LLC, Pawtucket RI (May 2020 - June 2023)</p>
+  <div class="section">
+    <h2>Volunteering</h2>
+    <p>Robotics Mentor (REV Robotics First Tech Challenge), Saint Raphael Academy, Pawtucket, RI (September 2023 - March 2024)</p>
     <ul>
-      <li>Collaborated with customers and vendors to procure materials and products</li>
-      <li>Employed strong communication skills, attention to detail, and problem-solving abilities to ensure high-quality work and customer satisfaction</li>
-      <li>Managed transactions with customers and vendors</li>
+      <li>Guided and mentored 13 robotics club students in designing, building, and programming robots for the REV Robotics FIRST Tech Challenge competition.</li>
+      <li>Used an Android-based robot kit programmed in Java, Kotlin, and Blocks programming interface.</li>
     </ul>
   </div>
 
-  <hr>
+  <div class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <p>Capstone - Mobile Development | Android Studio, Java, SQLite, GitLab - June 2024</p>
+      <ul>
+        <li>Developed a full-stack mobile application for a Vacation Scheduling Tool with a functional register/login screen, search functionality, ability to save, retrieve, edit, and delete data and generate user reports.</li>
+      </ul>
 
-  <h2>Skills</h2>
-  <div class="skills">
-    <ul>
-      <li> Portuguese(Fluent/Native)</li>
-      <li>Spring Boot, Problem-solving, Communication</li>
-      <li>HTML/CSS, Troubleshooting, Adaptability</li>
-      <li>Angular, Critical Thinking, Teamwork</li>
-    </ul>
+      <p>Web-Based Inventory Application | SpringBoot, Java, HTML - February 2024</p>
+      <ul>
+        <li>Developed a “Buy Now” button that decrements the product's inventory when bought.</li>
+        <li>Developed a message that indicates if a purchase is successful or failed.</li>
+        <li>Integrated Maximum and minimum fields for products/parts.</li>
+        <li>Implemented error messages regarding low inventory when adding or updating parts/products and if exceed inventory.</li>
+      </ul>
+
+      <p>Interactive World Map | Angular, TypeScript - December 2024</p>
+      <ul>
+        <li>Developed an interactive world map using an SVG file and the WorldBank API so that when a specific country is selected it returns info about the country (Name, Capital, Region, Income Level).</li>
+      </ul>
+
+      <p>Personal Portfolio | <a href="https://rsilva.dev" target="_blank">https://rsilva.dev</a> | HTML, W3.CSS, JavaScript</p>
+      <ul>
+        <li>Personal portfolio to display personal projects and resume, leveraging HTML, W3.CSS, JavaScript, and FormSpree API.</li>
+      </ul>
+
+      <p>Landing Page for Travel Agent | HTML, CSS, JavaScript - September 2023</p>
+      <ul>
+        <li>Developed a landing page for an independent travel agent leveraging HTML, CSS, and Javascript and used FormSpree API.</li>
+      </ul>
+    </div>
   </div>
+
+</div>
+
 
   <hr>
   
@@ -150,8 +205,9 @@
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5f83a83f-c772-429e-a17a-2e3e9d6e5b2f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4e487f98-7099-4085-8f66-f8e9c4b154bb" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="05043c55-790e-4568-9fde-a924848b3cda" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-      <div class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/sQ8DVZyUQs-P1IHQnMu6XA?identity__email=rsil162%40wgu.edu"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/sQ8DVZyUQs-P1IHQnMu6XA/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Certificate: Front-End Developer</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>Dec 20, 2023</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded To: </strong><span style="display: block;"> Rafael O Silva</span></p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FsQ8DVZyUQs-P1IHQnMu6XA%3Fidentity__email%3Drsil162%2540wgu.edu&amp;identity__email=rsil162%40wgu.edu" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;">VERIFY</a></p><script async="async" src="https://wgu.badgr.com/assets/widgets.bundle.js"></script></div>
-  </div>
+      <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/sQ8DVZyUQs-P1IHQnMu6XA?identity__email=rsil162%40wgu.edu"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/sQ8DVZyUQs-P1IHQnMu6XA/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Certificate: Front-End Developer</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>Dec 20, 2023</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded To: </strong><span style="display: block;"> Rafael O Silva</span></p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FsQ8DVZyUQs-P1IHQnMu6XA%3Fidentity__email%3Drsil162%2540wgu.edu&amp;identity__email=rsil162%40wgu.edu" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;">VERIFY</a></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
+      <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/ce1_UiqTR-WLnRNJUwzssA?identity__email=rsil162%40wgu.edu"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/ce1_UiqTR-WLnRNJUwzssA/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Certificate: Back-End Developer</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>Jun 3, 2024</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded To: </strong><span style="display: block;"> Rafael O Silva</span></p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2Fce1_UiqTR-WLnRNJUwzssA%3Fidentity__email%3Drsil162%2540wgu.edu&amp;identity__email=rsil162%40wgu.edu" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;">VERIFY</a></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>    
+    </div>
 
   
   <hr>
